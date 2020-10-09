@@ -21,7 +21,7 @@ const modals = () => {
                 }
                 windows.forEach(item => {
                     item.style.display = 'none';
-                    item.classList.add('animated', 'fadeInLeft'); 
+                    item.classList.add('animated', 'fadeIn'); 
                 });
                 openModal(modal);
             });
@@ -97,7 +97,7 @@ const modals = () => {
 
     bindModals('.button-design', '.popup-design', '.popup-design .popup-close');
     bindModals('.button-consultation', '.popup-consultation', '.popup-consultation .popup-close');
-    bindModals('.fixed-gift', '.popup-gift', '.popup-gift .popup-close', 'fadeInTopLeft', true);
+    bindModals('.fixed-gift', '.popup-gift', '.popup-gift .popup-close', true);
     openModalByScroll('.fixed-gift');
     
     // showModalByTime('.popup-consultation', 60000);
